@@ -306,6 +306,8 @@ enum MsgType {
     ListDatabases = 1803;
     AlterDatabase = 1804;
     DescribeDatabase = 1805;
+
+    AddField = 1900;
 }
 
 message MsgBase {
@@ -447,6 +449,7 @@ enum ObjectPrivilege {
     PrivilegeGroupCollectionReadOnly = 66;
     PrivilegeGroupCollectionReadWrite = 67;
     PrivilegeGroupCollectionAdmin = 68;
+    PrivilegeAddField = 69;
 }
 
 message PrivilegeExt {
